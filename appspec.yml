@@ -5,9 +5,9 @@ files:
   destination: /var/www/html/
 hooks:
   BeforeInstall: script/install_dependencies
-    - location: script/install_dependencies 
-      timeout: 300
-      runas: root
-    - location: scripts/start_server
-      timeout: 300
-      runas: root
+- location: script/install_dependencies 
+  timeout: 300
+  runas: root
+- location: scripts/start_server
+  timeout: 300
+  runas: root
