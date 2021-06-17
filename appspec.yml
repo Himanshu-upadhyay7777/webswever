@@ -4,7 +4,7 @@ files:
 - source: /index.html
   destination: /var/www/html/
 hooks:
- BeforeInstall: script/install_dependencies
+  BeforeInstall: script/install_dependencies
     - location: script/install_dependencies 
       timeout: 300
       runas: root
